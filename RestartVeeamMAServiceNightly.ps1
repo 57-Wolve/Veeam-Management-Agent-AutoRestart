@@ -58,7 +58,7 @@ try {
     $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable
 
     try {
-        Register-ScheduledTask -TaskName "RestartVeeamMAServiceNightly" -Action $action -Trigger $trigger -Principal $principal -Settings $settings -Description "Runs the VeeamMARestart script once the specified time"
+        Register-ScheduledTask -TaskName "RestartVeeamMAServiceNightly" -Action $action -Trigger $trigger -Principal $principal -Settings $settings -Description "Runs the VeeamMARestart script once at the specified time"
     } catch {
         $message = $_
         Write-error -Message "Failed to create restart scheduler task. $message"

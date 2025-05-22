@@ -1,6 +1,6 @@
 <#
-    Veeam-Management-Agent-AutoRestart.ps1
-    Copyright (C) 2025 William Gill <william.gill@anomalous.dev>
+    https://github.com/57-Wolve/Veeam-Management-Agent-AutoRestart
+    Copyright (C) 2025 William Gill
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published

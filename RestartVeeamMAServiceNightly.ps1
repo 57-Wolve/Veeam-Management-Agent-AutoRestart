@@ -52,7 +52,7 @@ try {
         Write-error -Message "Failed to create restart script. $message"
     }
 
-    $randomNumber = Get-Random -Minimum 0 -Maximum 60
+    $randomNumber = Get-Random -Minimum 0 -Maximum 59
     $formattedNumber = $randomNumber.ToString("00")
     $trigger = New-ScheduledTaskTrigger -Daily -At "00:$formattedNumber"
     $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-ExecutionPolicy Bypass -NoProfile -File `"C:\Scripts\VeeamManagementAgentAutoRestart.ps1`""
